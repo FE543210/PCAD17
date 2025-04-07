@@ -21,6 +21,6 @@ Console.WriteLine("Choose your numerator: ");
 double numerator = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Chosse your denominator: ");
 double denomitator = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine($"{numerator} / {denomitator} = {(numerator / denomitator)} +  With a remmainder of: {(numerator % denomitator)}");
+Console.WriteLine($"{numerator} / {denomitator} = {(numerator / denomitator)} with a remmainder of: {(numerator % denomitator)}");
 
 
