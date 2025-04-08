@@ -1,26 +1,27 @@
-﻿//using System.ComponentModel;
-////1. Write C# program to accept two integers and check if they are equal or not.
-//Console.WriteLine("Input 1st number: ");
-//int firstNumber = Convert.ToInt32(Console.ReadLine());
-//Console.WriteLine("Input 2nd number: ");
-//int secondNumber = Convert.ToInt32(Console.ReadLine());
-//if (firstNumber == secondNumber)
-//{
-//    Console.WriteLine($"{firstNumber} and {secondNumber} are equal\n");
-//}
-//else{
-//    Console.WriteLine($"{firstNumber} and {secondNumber} are not equal\n");
-//}
-////2. Write a C# Sharp program to find the sum of first 10 natural numbers.
-//int totalSum = 0;
-//for (int i = 1; i < 11; i++)
-//{
-//    Console.Write($"{i} ");
-//    totalSum += i;
-//}
-//Console.WriteLine($"\nThe total sum of the first 10 natural numbers is {totalSum}.");
-////Write a menu driven application to perform calculation functions like
-////addition, subtraction, multiplication, and division.
+﻿using System.ComponentModel;
+//1. Write C# program to accept two integers and check if they are equal or not.
+Console.WriteLine("Input 1st number: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input 2nd number: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+if (firstNumber == secondNumber)
+{
+    Console.WriteLine($"{firstNumber} and {secondNumber} are equal\n");
+}
+else
+{
+    Console.WriteLine($"{firstNumber} and {secondNumber} are not equal\n");
+}
+//2. Write a C# Sharp program to find the sum of first 10 natural numbers.
+int totalSum = 0;
+for (int i = 1; i < 11; i++)
+{
+    Console.Write($"{i} ");
+    totalSum += i;
+}
+Console.WriteLine($"\nThe total sum of the first 10 natural numbers is {totalSum}.");
+//Write a menu driven application to perform calculation functions like
+//addition, subtraction, multiplication, and division.
 
 char repeatOption;
 do
