@@ -1,20 +1,17 @@
-﻿namespace Assigment4._3_Version2
+namespace Calculator
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-
-            //The class implementation was not needed, just wanted to practice.
-            CustomerBillCalculate customer = new();
-            Console.Write("PLease enter customer id: ");
-            customer.CustomerId = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter name: ");
-            customer.CustomerName = Console.ReadLine();
-            Console.Write("Enter Units used: ");
-            customer.CustomerUsageUnits = Convert.ToDouble(Console.ReadLine());
-            customer.BillDisplay();
-
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
         }
     }
 }
