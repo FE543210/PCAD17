@@ -16,24 +16,40 @@ namespace Assignments5._1
             Console.WriteLine($"Testing an int array of 1,2,3,4,5 = {uniqueNumbers([1,2,3,4,5])}");
 
         }
-        public static bool IsXPalindrome(int x)
+        //1
+        //public static bool IsXPalindrome(int x)
+        //{
+        //    if (x < 0) return false;
+        //    string palindromeArray = x.ToString();
+        //    int palindromeLenght = palindromeArray.Length;
+        //    {
+        //        for (int i = 0; i < palindromeLenght / 2; i++)
+        //        {
+        //            if (palindromeArray[i] != palindromeArray[palindromeLenght - 1])
+        //            {
+        //                return false;
+        //            }
+        //            palindromeLenght--;
+        //        }
+        //    }
+        //    return true;
+        //}
+
+    //After pseudo code class: 
+    public static bool IsXPalindrome(int x)
         {
             if (x < 0) return false;
-            string palindromeArray = x.ToString();
-            int palindromeLenght = palindromeArray.Length;
+            int reverse = 0;
+            int temp = x;
+            while (temp > 0)
             {
-                for (int i = 0; i < palindromeLenght / 2; i++)
-                {
-                    if (palindromeArray[i] != palindromeArray[palindromeLenght - 1])
-                    {
-                        return false;
-                    }
-                    palindromeLenght--;
-                }
+                reverse = reverse * 10 + temp % 10;
+                temp = temp / 10;
             }
-            return true;
+            return reverse == x;
         }
-        public static int SumAll (int x)
+        //2
+        public static int SumAll(int x)
         {
             int digit = 0;
                 while (x != 0)
@@ -43,6 +59,7 @@ namespace Assignments5._1
                 }
          return digit;
         }
+        //3
         public static bool uniqueNumbers(int[] x)
         {
             Dictionary<int, int> result = new();
@@ -58,7 +75,7 @@ namespace Assignments5._1
                 }
             }
             return false;
-
+            
         }
     }
 }
