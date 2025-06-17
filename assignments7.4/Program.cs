@@ -4,7 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            CarsAndParking ParkingLotOne = new CarsAndParking(1,2,3);    
+            Console.WriteLine(ParkingLotOne.AddCar(1));
+            Console.WriteLine(ParkingLotOne.AddCar(1));
+            Console.WriteLine(ParkingLotOne.AddCar(2));
+            Console.WriteLine(ParkingLotOne.AddCar(2));
+            Console.WriteLine(ParkingLotOne.AddCar(2));
+            Console.WriteLine(ParkingLotOne.AddCar(3));
+            Console.WriteLine(ParkingLotOne.AddCar(3));
+            Console.WriteLine(ParkingLotOne.AddCar(3));
+            Console.WriteLine(ParkingLotOne.AddCar(3));
+
+
         }
     }
 }

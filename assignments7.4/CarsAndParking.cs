@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment7._4
 {
-    class CarsAndParking
+    public class CarsAndParking
     {
         public int smallCars { get; set; }
         public int mediumCars { get; set; }
